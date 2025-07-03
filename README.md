@@ -19,15 +19,19 @@ Instructions:
 
 3. Example setup: 
 
+```
 python3 -m venv my_env
 source my_env/bin/activate
 python3.13 -m pip install --upgrade pip
 pip3  install pandas numpy matplotlib seaborn scipy
 source $(brew --prefix root)/bin/thisroot.sh
+```
 
 4. Run:
 
+```
 python3 spinquest_spill_intensity_analysis/spill_timing_analyzer/main.py
+```
 
 ## Project 2: turn_structure_analyzer
 
