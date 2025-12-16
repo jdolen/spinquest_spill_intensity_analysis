@@ -1,0 +1,63 @@
+Name	Unit	Meaning
+F:NS2FLO	gpm	Flow rate of LCW at NS2?
+F:NS2SUP	degF	Temperature of LCW supply at NS2?
+F:NS2RET	degF	Temperature of LCW return at NS2?
+F:NM2V	amps	
+F:NM2D1	amps	
+F:NM2H	amps	
+F:NM3S	amps	FMag current.
+F:NM4AN	amps	KMag current.
+I:BEAM21	E12	
+I:VFOUT	Hz	
+E:M3TGHM	mm	Mean of horizontal beam profile measured at NM3.
+E:M3TGHS	mm	Sigma of horizontal beam profile measured at NM3.
+E:M3TGVM	mm	Mean of vertical beam profile measured at NM3.
+E:M3TGVS	mm	Sigma of vertical beam profile measured at NM3.
+E:M3TGHI	n/a	Fitted center of horizontal beam profile?? Obsolete?
+E:M3TGHF	n/a	Fitted width of horizontal beam profile?? Obsolete?
+E:M3TGVI	n/a	Fitted center of vertical beam profile?? Obsolete?
+E:M3TGVF	n/a	Fitted width of vertical beam profile?? Obsolete?
+E:M2C2HM	mm	At NM2.
+E:M2C2HS	mm	At NM2.
+E:M2C2VM	mm	At NM2.
+E:M2C2VS	mm	At NM2.
+E:M2C2HI	n/a	At NM2.
+E:M2C2HF	n/a	At NM2.
+E:M2C2VI	n/a	At NM2.
+E:M2C2VF	n/a	At NM2.
+L:CBAR	MB	At NM2.
+S:KTEVTC	Torr	At NM2.
+F:NM2ION	ppp	Number of protons measured with Ion Chamber at NM2.
+F:NM3ION	ppp	Number of protons measured with Ion Chamber at NM3.
+F:NM3SEM	ppp	Number of protons measured with SEM at NM3.
+F:NS7DFP	psi	
+M:OUTTMP	degF	Outside temperature?
+F:E906BM	cnts	Scaler counts of E906 Beam Monitor (which no longer exists).
+S:G2SEM	ppp	Number of protons measured with SEM at G2.
+F:NM3RST	degF	
+F:NM3RRT	degF	
+G:TURN13		Number of turns where a set of protons are injected into single RF bucket.
+G:BNCH13	bnch	Number of filled RF buckets per cycle (= 84 RF buckets). 84 at max.
+G:NBSYD		Number of filled RF buckets every 7 RF buckets. 7 at max.
+S:MSEP1U	Mils	
+S:F1SEM	Ptns	Number of protons measured with SEM at F1?
+F:NM2Q1	Amps	
+F:NM2Q2	Amps	
+U:TODB25	Date	
+G:RD3161	mrem	
+G:RD3162	mrem	
+I:FTSDF	53k%	Duty factor sampled at 53 kHz.
+F:MT6SC1	Cnts	
+F:MC7SC1	Cnts	
+F:MC1D	amps	
+F:MW1W	Amps	
+F:NM4LCWFLOW	gpm	Flow rate of LCW at NM4.
+F:NM4LCWP1	psig	Pressure of LCW return at NM4.
+F:NM4LCWP2	psig	Pressure of LCW supply before regulator(?) at NM4.
+F:NM4LCWP3	psig	Pressure of LCW supply at NM4.
+F:NM4LCWT1	degF	Temperature of LCW return at NM4.
+F:NM4LCWT2	degF	Temperature of LCW supply at NM4.
+F:NM4LCWT3	degF	Invalid.
+G:OUTTMP	degF	Outside temperature.
+G:HUMID	%	Outside humidity.
+G:BPRESS	mBar	Barometric pressure.
