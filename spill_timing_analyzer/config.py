@@ -5,13 +5,27 @@ spill_timing_analyzer config
 Description: Configuration for the spill timing analyzer.
 """
 
+import os
+
+# Determine the absolute path to the project root (one level up from this file)
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+LOCAL_DATA_DIR = os.path.join(BASE_DIR, "data")
+
 #ACNET_TSV_PATH = "/Users/jdolen/Google Drive/My Drive/00_SpinQuest_DarkQuest/spinquest_slowcontrol/all_acnet_tsv_files/"
 ACNET_TSV_PATH = "/Users/jdolen/NoBackup/ACNET/all_acnet_tsv_files/"
+
+# Fallback to local data directory if the hardcoded path doesn't exist
+if not os.path.exists(ACNET_TSV_PATH) and os.path.exists(LOCAL_DATA_DIR):
+    ACNET_TSV_PATH = LOCAL_DATA_DIR
 
 # The full path to the directory where the ROOT files are located.
 #ROOT_FILE_PATH = "/Users/jdolen/Code/SQDQ/spinquest_rootfiles/"
 ROOT_FILE_PATH = "/Users/jdolen/Google Drive/My Drive/00_SpinQuest_DarkQuest/spinquest_rootfiles"
 #ROOT_FILE_PATH = "/Users/jdolen/Code/SQDQ_Code/REFACTOR/AnalyzeBIM_53MHz/empty_spill_files"
+
+# Fallback to local data directory if the hardcoded path doesn't exist
+if not os.path.exists(ROOT_FILE_PATH) and os.path.exists(LOCAL_DATA_DIR):
+    ROOT_FILE_PATH = LOCAL_DATA_DIR
 
 # The pattern to match for the ROOT files.
 FILE_PATTERN = "histograms*.root"
@@ -63,4 +77,3 @@ else:
 
 
    
-

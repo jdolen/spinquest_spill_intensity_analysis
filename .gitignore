@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.pyc
+
+# Virtual Environments
+my_env/
+venv/
+env/
+
+# macOS
+.DS_Store
+
+# Output Directories (Plots)
+plots_spill_timing_*/
+Plots_TurnStructureAna_*/
+test_plots/
+histogram_plots/
+
+# IDE Settings
+.vscode/
+.idea/
