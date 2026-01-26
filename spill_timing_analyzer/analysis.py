@@ -400,6 +400,8 @@ class SpillAnalyzer:
         """Calculates the Gini coefficient of a numpy array.
               Alternative measure of non-uniformity. 0 uniform, 1 very non-uniform (one spike).
         """
+        # Create a local copy of array so we don't modify the source data
+        array = np.array(array, dtype=float)
         if np.amin(array) < 0:
             array -= np.amin(array) #Ensure non-negative values
         array += 0.0000001 # Prevent division by zero 
